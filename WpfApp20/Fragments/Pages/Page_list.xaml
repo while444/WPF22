@@ -15,7 +15,7 @@
             <RowDefinition Height="82*"/>
         </Grid.RowDefinitions>
 
-        <DataGrid x:Name="DataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="DataGrid" Grid.Row="1" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="DataGrid_SelectionChanged">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Логин" Binding="{Binding id}" Width="*"/>
                 <DataGridTextColumn Header="Пароль" Binding="{Binding Password}" Width="*"/>

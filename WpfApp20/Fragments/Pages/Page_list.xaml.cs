@@ -32,5 +32,10 @@ namespace WpfApp20.Fragments.Pages
             var user = DBHelper.DBHelper.GetContext().UserData;
             DataGrid.ItemsSource = user.ToList();
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
